@@ -26,7 +26,7 @@ public class Main extends Application {
         thread.start();
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("first-scene.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Discordd");
+        stage.setTitle("Discord");
         stage.setScene(scene);
         stage.show();
     }
