@@ -1,0 +1,33 @@
+.background {
+    -fx-background-image: url("images/background.jpg");
+    -fx-background-size: 100% 100%;
+}
+
+.homeButton {
+    -fx-background-image: url("images/discord.png");
+    -fx-background-size: 100% 100%;
+}
+
+.plus {
+    -fx-background-image: url("images/plus.jpg");
+    -fx-background-size: 100% 100%;
+}
+
+.settings {
+    -fx-background-image: url("images/setting.png");
+    -fx-background-size: 100% 100%;
+}
+
+.friends {
+    -fx-background-image: url("images/friends.png");
+    -fx-background-size: 100% 100%;
+}
+
+.button:hover {
+    -fx-background-color:#8D8D97;
+}
+
+.voice {
+    -fx-background-image: url("images/voice.jpg");
+    -fx-background-size: 100% 100%;
+}

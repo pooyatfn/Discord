@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="sceneAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="463.0" prefWidth="829.0" styleClass="background"
+            stylesheets="@../../../back-ground.css" xmlns="http://javafx.com/javafx/18"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.discord.controllers.FistSceneController">
+   <Pane fx:id="signInPane" layoutX="246.0" layoutY="74.0" prefHeight="314.0" prefWidth="337.0"
+         style="-fx-background-radius: 10; -fx-background-color: #4f5a64;">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="83.0" layoutY="14.0" text="Welcome back!"
+             textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="25.0"/>
+         </font>
+      </Label>
+      <Label fx:id="signInLabel" layoutX="52.0" layoutY="50.0" text="We're so exited to see you again!"
+             textFill="#030303">
+         <font>
+            <Font size="15.0"/>
+         </font>
+      </Label>
+      <TextField fx:id="signInUsername" layoutX="28.0" layoutY="114.0" prefHeight="25.0" prefWidth="268.0"/>
+      <TextField fx:id="signInPassword" layoutX="28.0" layoutY="180.0" prefHeight="25.0" prefWidth="268.0"/>
+      <Label layoutX="29.0" layoutY="97.0" text="USERNAME" textFill="WHITE"/>
+      <Label layoutX="28.0" layoutY="163.0" text="PASSWORD" textFill="WHITE"/>
+      <Button contentDisplay="CENTER" layoutX="28.0" layoutY="244.0" mnemonicParsing="false"
+              onAction="#loginButtonClick" pickOnBounds="false" prefHeight="25.0" prefWidth="268.0"
+              style="-fx-background-color: #4d94ff;" text="Login" textAlignment="CENTER"/>
+      <Hyperlink layoutX="28.0" layoutY="269.0" onAction="#registerAccountHyperlinkClick" text="Register an account"
+                 textFill="#4d94ff"/>
+   </Pane>
+   <Pane fx:id="signUpPane" layoutX="246.0" layoutY="74.0" prefHeight="314.0" prefWidth="337.0"
+         style="-fx-background-radius: 10; -fx-background-color: #4f5a64;" visible="false">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="62.0" layoutY="14.0" text="Create an account"
+             textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="25.0"/>
+         </font>
+      </Label>
+      <TextField fx:id="signUpUsername" layoutX="28.0" layoutY="74.0" prefHeight="25.0" prefWidth="268.0"/>
+      <TextField fx:id="signUpEmail" layoutX="28.0" layoutY="158.0" prefHeight="25.0" prefWidth="268.0"/>
+      <Label layoutX="29.0" layoutY="57.0" text="USERNAME" textFill="WHITE"/>
+      <Label layoutX="28.0" layoutY="141.0" text="EMAIL" textFill="WHITE"/>
+      <Button contentDisplay="CENTER" layoutX="28.0" layoutY="244.0" mnemonicParsing="false"
+              onAction="#createAccountButtonClick" pickOnBounds="false" prefHeight="25.0" prefWidth="268.0"
+              style="-fx-background-color: #4d94ff;" text=" Create" textAlignment="CENTER"/>
+      <Hyperlink layoutX="28.0" layoutY="269.0" onAction="#haveAccountHyperlinkClick" text="Already have an account?"
+                 textFill="#4d94ff"/>
+      <Label layoutX="29.0" layoutY="99.0" text="PASSWORD" textFill="WHITE"/>
+      <TextField fx:id="signUpPassword" layoutX="28.0" layoutY="116.0" prefHeight="25.0" prefWidth="268.0"/>
+      <Label layoutX="31.0" layoutY="183.0" text="FULL NAME" textFill="WHITE"/>
+      <TextField fx:id="signUpFullName" layoutX="28.0" layoutY="200.0" prefHeight="25.0" prefWidth="268.0"/>
+   </Pane>
+   <Pane fx:id="secondSignUpPane" layoutX="246.0" layoutY="74.0" prefHeight="314.0" prefWidth="337.0"
+         style="-fx-background-radius: 10; -fx-background-color: #4f5a64;" visible="false">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="97.0" layoutY="57.0" text="Optional information"
+             textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="14.0"/>
+         </font>
+      </Label>
+      <TextField fx:id="profilePath" layoutX="29.0" layoutY="94.0" prefHeight="25.0" prefWidth="211.0"/>
+      <TextField layoutX="28.0" layoutY="145.0" prefHeight="25.0" prefWidth="268.0"/>
+      <Label layoutX="29.0" layoutY="77.0" text="SET PROFILE" textFill="WHITE"/>
+      <Label layoutX="28.0" layoutY="130.0" text="PHONE NUMBER" textFill="WHITE"/>
+      <Button contentDisplay="CENTER" layoutX="28.0" layoutY="244.0" mnemonicParsing="false"
+              onAction="#continueButtonClick" pickOnBounds="false" prefHeight="25.0" prefWidth="268.0"
+              style="-fx-background-color: #4d94ff;" text="Set" textAlignment="CENTER"/>
+      <Hyperlink layoutX="28.0" layoutY="269.0" onAction="#backHyperlinkClick" text="Back" textFill="#4d94ff"/>
+      <Label fx:id="signUpStatus" layoutX="28.0" layoutY="179.0" text="STATUS" textFill="WHITE"/>
+      <ChoiceBox fx:id="status" layoutX="28.0" layoutY="196.0" prefHeight="25.0" prefWidth="268.0"/>
+      <Button layoutX="241.0" layoutY="94.0" mnemonicParsing="false" onAction="#browseButtonClick" text="Browse"/>
+      <Label layoutX="32.0" layoutY="14.0" text="Your Account Created Successfully" textFill="#1aff00">
+         <font>
+            <Font size="18.0"/>
+         </font>
+      </Label>
+   </Pane>
+</AnchorPane>
